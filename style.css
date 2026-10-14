@@ -1,0 +1,95 @@
+/* Pendalogue site: system fonts only, nothing loaded from another host (D-0174 item 4). */
+:root {
+  --ink: #1d232a;
+  --muted: #56606b;
+  --line: #d9dee3;
+  --wash: #f5f7f9;
+  --accent: #1f5f8b;
+  --bg: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e4e8ec;
+    --muted: #a3adb7;
+    --line: #37404a;
+    --wash: #1b2128;
+    --accent: #7db8e0;
+    --bg: #12171c;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+header.site, main, footer.site {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+header.site {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+header.site .brand { font-weight: 700; color: var(--ink); text-decoration: none; }
+header.site nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
+header.site nav a { color: var(--muted); text-decoration: none; }
+header.site nav a:hover { color: var(--accent); }
+main { padding-top: 1.5rem; padding-bottom: 2rem; }
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 0.5rem 0 0.75rem; }
+h2 { font-size: 1.3rem; margin-top: 2.25rem; padding-top: 0.5rem; border-top: 1px solid var(--line); }
+h3 { font-size: 1.05rem; margin-top: 1.5rem; }
+a { color: var(--accent); }
+em { color: var(--muted); }
+table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+}
+th, td { border-bottom: 1px solid var(--line); padding: 0.4rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: var(--wash); }
+td:not(:first-child) { white-space: nowrap; }
+code { font-size: 0.9em; background: var(--wash); padding: 0 0.2em; border-radius: 3px; }
+/* The county page's "Method and limits", closed until the reader opens it; no script (D-0198). */
+details#method { margin-top: 2.25rem; border-top: 1px solid var(--line); padding-top: 0.5rem; }
+details#method > summary { cursor: pointer; font-size: 1.3rem; font-weight: 700; padding: 0.25rem 0; }
+details#method > summary:hover { color: var(--accent); }
+details#method[open] > summary { margin-bottom: 0.5rem; }
+#notices ~ p { font-size: 0.9rem; color: var(--muted); }
+/* the methods page's formulas, in words (D-0200) */
+p.formula { background: var(--wash); border-left: 3px solid var(--accent); padding: 0.6rem 0.9rem; }
+footer.site {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+/* Charts (D-0181): inline SVG drawn by the engine; colours follow the page's theme. */
+:root { --bar: #b9c3cc; --bar-hi: var(--accent); }
+@media (prefers-color-scheme: dark) { :root { --bar: #6b7682; } }
+figure.chart { margin: 1.5rem 0; }
+figure.chart figcaption { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.4rem; }
+figure.chart svg { width: 100%; height: auto; display: block; font-size: 12px; }
+figure.chart text { fill: var(--ink); }
+figure.chart .value, figure.chart .ref-label, figure.chart .axis-title { fill: var(--muted); }
+figure.chart .strip-title { font-weight: 600; }
+figure.chart .label.hi { font-weight: 600; }
+figure.chart .bar { fill: var(--bar); }
+figure.chart .bar.hi, figure.chart .dot.hi { fill: var(--bar-hi); }
+figure.chart .dot { fill: var(--bar); stroke: var(--bg); stroke-width: 1; }
+figure.chart .axis { stroke: var(--line); stroke-width: 1; }
+figure.chart .ref { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 3; }
+figure.chart a:hover .bar, figure.chart a:hover .dot { fill: var(--accent); opacity: 0.8; }
