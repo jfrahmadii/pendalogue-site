@@ -1,7 +1,7 @@
-# Publish log, 2026-10-14
+# Publish log, 2026-10-15
 
-- Built from commit `70e4933` of the engine repository.
-- Pages: 54; values recorded and re-read by P1: 3396.
+- Built from commit `77debba` of the engine repository.
+- Pages: 54; values recorded and re-read by P1: 3224.
 
 ## What the figures rest on
 
@@ -26,57 +26,57 @@
 
 | Page | Read on | Note |
 |---|---|---|
-| about.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/algoma.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/brant.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/bruce.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/chatham-kent.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/cochrane.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/dufferin.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/durham.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/elgin.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/essex.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/frontenac.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/greater-sudbury-grand-sudbury.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/grey.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/haldimand-norfolk.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/haliburton.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/halton.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/hamilton.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/hastings.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/huron.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/kawartha-lakes.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/kenora.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/lambton.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/lanark.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/leeds-and-grenville.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/lennox-and-addington.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/manitoulin.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/middlesex.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/muskoka.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/niagara.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/nipissing.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/northumberland.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/ottawa.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/oxford.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/parry-sound.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/peel.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/perth.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/peterborough.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/prescott-and-russell.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/prince-edward.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/rainy-river.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/renfrew.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/simcoe.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/stormont-dundas-and-glengarry.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/sudbury.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/thunder-bay.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/timiskaming.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/toronto.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/waterloo.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/wellington.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| county/york.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| index.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| methods.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| ranking.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
-| tariffs.html | 2026-10-14 | Jeff, 2026-10-14: 'i read the pages' |
+| about.html | not read |  |
+| county/algoma.html | not read |  |
+| county/brant.html | not read |  |
+| county/bruce.html | not read |  |
+| county/chatham-kent.html | not read |  |
+| county/cochrane.html | not read |  |
+| county/dufferin.html | not read |  |
+| county/durham.html | not read |  |
+| county/elgin.html | not read |  |
+| county/essex.html | not read |  |
+| county/frontenac.html | not read |  |
+| county/greater-sudbury-grand-sudbury.html | not read |  |
+| county/grey.html | not read |  |
+| county/haldimand-norfolk.html | not read |  |
+| county/haliburton.html | not read |  |
+| county/halton.html | not read |  |
+| county/hamilton.html | not read |  |
+| county/hastings.html | not read |  |
+| county/huron.html | not read |  |
+| county/kawartha-lakes.html | not read |  |
+| county/kenora.html | not read |  |
+| county/lambton.html | not read |  |
+| county/lanark.html | not read |  |
+| county/leeds-and-grenville.html | not read |  |
+| county/lennox-and-addington.html | not read |  |
+| county/manitoulin.html | not read |  |
+| county/middlesex.html | not read |  |
+| county/muskoka.html | not read |  |
+| county/niagara.html | not read |  |
+| county/nipissing.html | not read |  |
+| county/northumberland.html | not read |  |
+| county/ottawa.html | not read |  |
+| county/oxford.html | not read |  |
+| county/parry-sound.html | not read |  |
+| county/peel.html | not read |  |
+| county/perth.html | not read |  |
+| county/peterborough.html | not read |  |
+| county/prescott-and-russell.html | not read |  |
+| county/prince-edward.html | not read |  |
+| county/rainy-river.html | not read |  |
+| county/renfrew.html | not read |  |
+| county/simcoe.html | not read |  |
+| county/stormont-dundas-and-glengarry.html | not read |  |
+| county/sudbury.html | not read |  |
+| county/thunder-bay.html | not read |  |
+| county/timiskaming.html | not read |  |
+| county/toronto.html | not read |  |
+| county/waterloo.html | not read |  |
+| county/wellington.html | not read |  |
+| county/york.html | not read |  |
+| index.html | not read |  |
+| methods.html | not read |  |
+| ranking.html | not read |  |
+| tariffs.html | not read |  |
