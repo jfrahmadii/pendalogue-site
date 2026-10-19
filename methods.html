@@ -35,15 +35,29 @@
 <p>The county's total is the sum over its industries. Ontario's figure is Statistics Canada's "jobs due to foreign demand" for the United States. It counts each job in the industry where the work is done, whether that industry sells to the United States itself or supplies an industry that does: a trucking job that hauls auto parts bound for Michigan is a trucking job tied to US demand.</p>
 <h3 id="jobs-share">Jobs share, the ranking measure</h3>
 <p class="formula">jobs share = county's jobs tied to US demand ÷ county's employed residents, as a percent</p>
-<h3 id="tariff-shares">Share of US exports that paid US duty, and the other tariff shares</h3>
-<p>These are worked out in three layers, each an average of the one below:</p>
+<h3 id="tariff-shares">The four tariff shares</h3>
+<p>A county page gives four shares of the county's US exports: the share that paid US duty, the duty paid, the share on tariff lines a US tariff lists, and the share tariffed but not yet in the duty data. Each is a percent of the value of everything the county's industries sell to the United States, goods and services together.</p>
+<h4 id="us-records">What the US records</h4>
+<p>The US Census Bureau records every import from Canada, product by product (a product is a six-digit code of the Harmonized System, such as "gear boxes and their parts, for motor vehicles"). For each product and month it records:</p>
+<ul>
+<li><strong>Customs value:</strong> the value of the goods declared at the border.</li>
+<li><strong>Dutiable value:</strong> the part of the customs value on which US duty was charged. Goods that enter free, because their line carries no tariff or because they qualify under CUSMA, have none.</li>
+<li><strong>Calculated duty:</strong> the duty charged on the dutiable value, in dollars.</li>
+</ul>
+<p>Separately, we read each US tariff instrument in force on 2026-10-14 for the tariff lines it names (the finer codes inside each product). A line an instrument names is a <strong>listed line</strong>. Listed is not the same as charged: a listed good may still enter free under CUSMA.</p>
+<h4 id="tariff-products">Each share, for one product</h4>
+<p class="formula">paid US duty = dutiable value ÷ customs value, over 2026-06 to 2026-08, as a percent</p>
+<p class="formula">duty, percent of value = calculated duty ÷ customs value, over 2026-06 to 2026-08, as a percent</p>
+<p class="formula">on listed lines = customs value on listed lines ÷ customs value, in 2022, as a percent</p>
+<p class="formula">tariffed, not yet in the duty data = customs value on lines first listed by an instrument that took effect after the end of the duty data's first month ÷ customs value, in 2022, as a percent</p>
+<p>The last share exists because duty takes time to show up in the records. The duty data covers three months. A tariff that began after the end of the first of them has been charged for less than two of the three, so the duty data understates what its goods now pay. Those goods are counted in this fourth share so a reader can see how much of a county's exports they are. No rate is applied to them, and their duty data is left as recorded.</p>
+<h4 id="tariff-county">From products to a county</h4>
 <ol>
-<li><strong>Each product.</strong> From the US Census Bureau's records of imports from Canada: the share of the product's value that paid duty (dutiable value ÷ customs value) over 2026-06 to 2026-08; the duty itself (calculated duty ÷ customs value); and the share on tariff lines a US instrument in force lists (value on listed lines ÷ all value, 2022 imports).</li>
-<li><strong>Each industry.</strong> The average of its products' shares, each product weighted by Ontario's 2022 exports of it to the United States. Products are matched to industries through the US Census Bureau's concordance.</li>
-<li><strong>Each county.</strong> The average of its industries' shares, each industry weighted by the county's estimated US exports in it.</li>
+<li><strong>Each industry.</strong> The industry's share is the average of its products' shares, each product weighted by Ontario's 2022 exports of it to the United States. Products are matched to industries through the US Census Bureau's concordance. An industry that exports no goods, as most services do, has a share of zero.</li>
+<li><strong>Each county.</strong> The county's share is the average of its industries' shares, each weighted by the county's estimated US exports in that industry.</li>
 </ol>
 <p class="formula">county's share = sum over its industries of (industry's share × county's US exports in the industry) ÷ county's US exports</p>
-<p>The industry's share is Ontario-wide, at Canada-wide rates by product, so a county's share moves only with its mix of industries.</p>
+<p>The industry's share is Ontario-wide, at Canada-wide rates by product, so a county's share moves only with its mix of industries. It is not a measure of the county's own firms: some of them may claim CUSMA more or less often than the average.</p>
 <h3 id="us-dependence">US share of exports</h3>
 <p class="formula">US share of exports = county's estimated exports to the United States ÷ its estimated exports to all countries, as a percent</p>
 <p>Every county inherits Ontario's US share within each industry, so this too moves only with the county's mix of industries.</p>

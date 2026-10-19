@@ -1,7 +1,7 @@
 # Publish log, 2026-10-19
 
-- Built from commit `83baf47` of the engine repository.
-- Pages: 54; values recorded and re-read by P1: 3224.
+- Built from commit `cdabadf` of the engine repository.
+- Pages: 54; values recorded and re-read by P1: 3226.
 
 ## What the figures rest on
 
