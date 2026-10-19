@@ -1,6 +1,6 @@
-# Publish log, 2026-10-15
+# Publish log, 2026-10-19
 
-- Built from commit `77debba` of the engine repository.
+- Built from commit `d95495f` of the engine repository.
 - Pages: 54; values recorded and re-read by P1: 3224.
 
 ## What the figures rest on

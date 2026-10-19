@@ -60,6 +60,19 @@ table {
 th, td { border-bottom: 1px solid var(--line); padding: 0.4rem 0.6rem; text-align: left; vertical-align: top; }
 th { background: var(--wash); }
 td:not(:first-child) { white-space: nowrap; }
+/* Tables of long text (the tariffs page): cells wrap and the table fits the column, so nothing hides off the edge.
+   On a phone each row becomes a card, every value under its column's name (the cell's data-label). */
+table.cards { display: table; width: 100%; }
+table.cards td { white-space: normal; }
+@media (max-width: 40rem) {
+  table.cards, table.cards tbody, table.cards tr, table.cards td { display: block; width: 100%; }
+  table.cards thead { display: none; }
+  table.cards tr { border: 1px solid var(--line); border-radius: 4px; margin: 0 0 0.75rem; padding: 0.25rem 0; }
+  table.cards td { border-bottom: none; padding: 0.2rem 0.75rem; }
+  table.cards td::before { content: attr(data-label); display: block; font-size: 0.8rem; font-weight: 600; color: var(--muted); }
+  table.cards td:first-child { font-weight: 600; }
+  table.cards td:first-child::before { display: none; }
+}
 code { font-size: 0.9em; background: var(--wash); padding: 0 0.2em; border-radius: 3px; }
 /* The county page's "Method and limits", closed until the reader opens it; no script. */
 details#method { margin-top: 2.25rem; border-top: 1px solid var(--line); padding-top: 0.5rem; }
