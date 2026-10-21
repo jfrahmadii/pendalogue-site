@@ -20,7 +20,7 @@
 </header>
 <main>
 <h1>How the figures are calculated</h1>
-<p>Statistics Canada publishes, for Ontario as a whole, how many jobs in each industry exist because of demand from the United States, and how much each industry exports. It does not publish these for counties. This page shows how we turn the provincial figures into county figures, step by step, with a worked example, and how we check the result. The checks were run on 2026-10-14, on the data every page of this site is built from.</p>
+<p>Statistics Canada publishes, for Ontario as a whole, how many jobs in each industry exist because of demand from the United States, and how much each industry exports. It does not publish these for counties. This page shows how we turn the provincial figures into county figures, step by step, with a worked example, and how we check the result. The checks were run on 2026-10-21, on the data every page of this site is built from.</p>
 <h2 id="steps">In three steps</h2>
 <ol>
 <li><strong>Start from Ontario, industry by industry.</strong> For each industry, Statistics Canada's 2022 figures for Ontario (12-10-0100): the jobs that exist because of US demand, the exports to the United States, and the exports to all countries.</li>
@@ -36,7 +36,7 @@
 <h3 id="jobs-share">Jobs share, the ranking measure</h3>
 <p class="formula">jobs share = county's jobs tied to US demand ÷ county's employed residents, as a percent</p>
 <h3 id="tariff-shares">The four tariff shares</h3>
-<p>A county page gives four shares of the county's US exports: the share that paid US duty, the duty paid, the share on tariff lines a US tariff lists, and the share tariffed but not yet in the duty data. Each is a percent of the value of everything the county's industries sell to the United States, goods and services together.</p>
+<p>A county page gives four shares of the county's US exports: the share that paid US duty, the duty paid, the share on tariff lines a US tariff lists, and the share tariffed but not yet in the duty data. Where it reaches half a percent, it also gives the part of the listed share banned from US entry, as a range. Each is a percent of the value of everything the county's industries sell to the United States, goods and services together.</p>
 <h4 id="us-records">What the US records</h4>
 <p>The US Census Bureau records every import from Canada, product by product (a product is a six-digit code of the Harmonized System, such as "gear boxes and their parts, for motor vehicles"). For each product and month it records:</p>
 <ul>
@@ -50,7 +50,9 @@
 <p class="formula">duty, percent of value = calculated duty ÷ customs value, over 2026-06 to 2026-08, as a percent</p>
 <p class="formula">on listed lines = customs value on listed lines ÷ customs value, in 2022, as a percent</p>
 <p class="formula">tariffed, not yet in the duty data = customs value on lines first listed by an instrument that took effect after the end of the duty data's first month ÷ customs value, in 2022, as a percent</p>
-<p>The last share exists because duty takes time to show up in the records. The duty data covers three months. A tariff that began after the end of the first of them has been charged for less than two of the three, so the duty data understates what its goods now pay. Those goods are counted in this fourth share so a reader can see how much of a county's exports they are. No rate is applied to them, and their duty data is left as recorded.</p>
+<p class="formula">banned from US entry, low end = customs value on listed lines a US import ban excludes in every form ÷ customs value, in 2022, as a percent</p>
+<p class="formula">banned from US entry, high end = customs value on listed lines a US import ban excludes, including lines banned only when packaged ÷ customs value, in 2022, as a percent</p>
+<p>The tariffed-but-not-yet-observed share exists because duty takes time to show up in the records. The duty data covers three months. A tariff that began after the end of the first of them has been charged for less than two of the three, so the duty data understates what its goods now pay. Those goods are counted in this fourth share so a reader can see how much of a county's exports they are. No rate is applied to them, and their duty data is left as recorded.</p>
 <h4 id="tariff-county">From products to a county</h4>
 <ol>
 <li><strong>Each industry.</strong> The industry's share is the average of its products' shares, each product weighted by Ontario's 2022 exports of it to the United States. Products are matched to industries through the US Census Bureau's concordance. An industry that exports no goods, as most services do, has a share of zero.</li>
@@ -91,6 +93,10 @@
 <p>The share in goods that paid US duty, and the duty paid, apply what the US Census Bureau records on imports from Canada, product by product, over 2026-06 to 2026-08, to each industry's 2022 exports: Canada-wide rates by product, not the county's own firms' CUSMA claims.</p>
 <h3 id="not-yet">Tariffed, not yet in the duty data</h3>
 <p>Goods on lines first tariffed by an instrument that took effect after the first month of the duty data are counted separately; no rate is applied to them. The duty data covers them for only part of its months.</p>
+<h3 id="banned">Banned from entry</h3>
+<p>Some listed goods are banned from US entry, not tariffed: since 2026-09-29 the United States excludes certain Canadian alcoholic beverages, whey, molasses, non-alcoholic beer and large motorcycles. The share banned from entry is shown as a range, because many of the alcohol lines are banned only when packaged in bottles, cans, boxes or kegs, and bulk shipments on them still enter at the tariff. The low end counts only lines banned in every form; the high end counts every banned line whole. Both are part of the share on listed lines, never above it.</p>
+<h3 id="duty-ban">Duty on banned goods</h3>
+<p>Banned goods pay no duty because they no longer enter. Once the duty data covers months after the ban took effect, a fall in duty on them comes from the ban, not from relief.</p>
 <h3 id="peer-group">Peer groups</h3>
 <p>A county's peers are the counties in its urbanity class: urban, mixed or rural, set by the share of its 2021 census population living outside population centres. Size is not part of the peer key. The 2021 Census did not fully enumerate the Six Nations reserve, which lies in Brant and Haldimand-Norfolk; both keep the class Statistics Canada's counts give them, and both pages say that counting those residents could change it.</p>
 <h2 id="cma-check">How the method is checked</h2>
@@ -691,7 +697,7 @@
 <h2 id="since-2022">Ontario since 2022</h2>
 <p>The panel of Ontario's exports to the United States since 2022 is Ontario-wide, from Statistics Canada's customs-basis trade tables; it is not allocated to counties.</p>
 <h2 id="notices">Sources and notices</h2>
-<p><em>Published 2026-10-20. Figures rest on Ontario's exports in 2022; US duties paid, 2026-06 to 2026-08; US tariffs as of 2026-10-14.</em></p>
+<p><em>Published 2026-10-21. Figures rest on Ontario's exports in 2022; US duties paid, 2026-06 to 2026-08; US tariffs as of 2026-10-14.</em></p>
 <p>Adapted from Statistics Canada, table 12-10-0100-01, Value added in exports, by industry, provincial and territorial (2022); table 98-10-0592-01, Class of worker by industry groups, labour force status, age and gender, Canada, provinces and territories and census divisions (2021 Census); the Canadian International Merchandise Trade Database, domestic exports to the United States by product (2022); table 12-10-0138-01, Trade in goods by exporter characteristics, by industry of establishment and census metropolitan area (2021 and 2022); table 98-10-0448-01, Industry groups by class of worker including job permanency, labour force status, age and gender, Canada, provinces and territories, census metropolitan areas and census agglomerations with parts (2021 Census); table 12-10-0180-01, Rural Canada Trade Profiles, export of goods, number of exporting establishments and trade value, by industry and location indicator (2022); table 98-10-0456-01, Place of work status by industry sectors, occupation broad category and gender, census divisions and census subdivisions (2021 Census); table 98-10-0459-01, Commuting flow from geography of residence to geography of work by gender, census subdivisions (2021 Census); table 12-10-0176-01, Canadian international merchandise trade by industry for all countries, monthly (2022). This does not constitute an endorsement by Statistics Canada of this product. The data are used under the Statistics Canada Open Licence.</p>
 <p>This product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau. US imports from Canada by tariff line, and the duties recorded on them, are from the US Census Bureau's international trade data.</p>
 <p>Pendalogue is independent. It is not affiliated with Statistics Canada, the Government of Canada or the US Census Bureau, and uses no logo or symbol of theirs.</p>
